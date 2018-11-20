@@ -30,13 +30,13 @@ public class ManageFragment extends Fragment {
 
     public ManageFragment() {
         // Required empty public constructor
-        context = getActivity();
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
+        context = getActivity();  // ->   PARA EL CONTEXTO.
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_manage, container, false);
         //  TODO CODIGO NECESARIO PARA QUE EL FRAME FUNCIONE
